@@ -16,13 +16,5 @@ langchain-core==0.1.52
 langchain-openai==0.1.8
 langchain==0.1.20
 
-# Additional dependencies for the enhanced features
+# Additional dependencies
 schedule==1.2.0
-pathlib==1.0.1
-hashlib==3.11.0
-pickle==4.0
-threading==3.11.0
-concurrent-futures==3.1.1
-sqlite3==3.41.2
-uuid==1.30
-enum34==1.1.10
