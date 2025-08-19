@@ -3,12 +3,15 @@ runtime: python3
 build:
   commands:
     build:
+      - echo "Installing dependencies..."
+      - pip install --upgrade pip
       - pip install -r requirements.txt
 run:
-  runtime-version: 3.9.16
-  command: streamlit run app66d.py --server.port=8080 --server.address=0.0.0.0
+  runtime-version: 3.11
+  command: streamlit run app.py --server.port=8000 --server.address=0.0.0.0 --server.headless=true
   network:
-    port: 8080
+    port: 8000
+    env: PORT
   env:
     - name: PORT
-      value: "8080"
+      value: "8000"
