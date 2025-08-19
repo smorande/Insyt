@@ -1,26 +1,28 @@
-# Core Dependencies
-streamlit>=1.28.0
-boto3>=1.34.0
-python-dotenv>=1.0.0
+streamlit==1.28.1
+boto3==1.34.0
+python-dotenv==1.0.0
+openai==1.3.0
+PyMuPDF==1.23.0
+python-docx==0.8.11
+Pillow==10.0.0
+pandas==2.0.0
+requests==2.31.0
+reportlab==4.0.0
+botocore==1.34.0
 
-# AI/ML APIs
-openai>=1.3.0  # OpenAI GPT-4o-mini fallback
+# LangGraph Dependencies
+langgraph==0.0.60
+langchain-core==0.1.52
+langchain-openai==0.1.8
+langchain==0.1.20
 
-# File Processing
-PyMuPDF>=1.23.0  # PDF processing
-python-docx>=0.8.11  # Word document processing
-Pillow>=10.0.0  # Image processing
-
-# Data Processing
-pandas>=2.0.0
-requests>=2.31.0
-
-# Report Generation
-reportlab>=4.0.0  # PDF generation
-
-# AWS SDK
-botocore>=1.34.0
-
-# Additional Dependencies
-hashlib2>=1.0.1  # For caching
-pickle5>=0.0.12  # For cache serialization
+# Additional dependencies for the enhanced features
+schedule==1.2.0
+pathlib==1.0.1
+hashlib==3.11.0
+pickle==4.0
+threading==3.11.0
+concurrent-futures==3.1.1
+sqlite3==3.41.2
+uuid==1.30
+enum34==1.1.10
